@@ -1,0 +1,263 @@
+
+/* UF_PARAM_STOCK_DRIVE
+ *
+ *   Description:
+ *      Stock for drive geometry 
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Drive
+ *  Variable Name: <prefix>_stock_drive
+ *
+ *   Possible Values: double
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_DRIVE   54  /*  UF_PARAM_type_double_length */
+
+/* UF_PARAM_STOCK_PROFILE_PASS
+ *
+ *   Description:
+ *      Parameter is the stock applied to the finish pass.
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Profile Pass
+ *  Variable Name: <prefix>_stock_profile_pass
+ *
+ *   Possible Values: UF_PARAM_type_double_length
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_PROFILE_PASS   263  /* UF_PARAM_type_double_length */
+
+
+/* UF_PARAM_STOCK_FLOOR
+ *
+ *   Description:
+ *      Parameter is the floor stock.
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Floor
+ *  Variable Name: <prefix>_stock_floor
+ *
+ *   Possible Values: UF_PARAM_type_double_length
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_FLOOR   264  /* UF_PARAM_type_double_length */
+
+
+/* UF_PARAM_STOCK_PART
+ *
+ *   Description:
+ *      Parameter is the part side stock.
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Part
+ *  Variable Name: <prefix>_stock_part
+ *
+ *   Possible Values: UF_PARAM_type_double_length
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_PART   265  /* UF_PARAM_type_double_length */
+
+
+/* UF_PARAM_STOCK_BLANK
+ *
+ *   Description:
+ *      This parameter specifies the stock applied to blank geometry.
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Blank
+ *  Variable Name: <prefix>_stock_blank
+ *
+ *   Possible Values: double
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_BLANK   318  /* UF_PARAM_type_double_length */
+
+
+/* UF_PARAM_STOCK_CHECK
+ *
+ *   Description:
+ *      This parameter specifies the stock for check geometry.
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Check
+ *  Variable Name: <prefix>_stock_check
+ *
+ *   Possible Values: double
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_CHECK   330  /* UF_PARAM_type_double_length */
+
+
+/* UF_PARAM_STOCK_TRIM
+ *
+ *   Description:
+ *      This parameter specifies the stock for trim geometry
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Trim
+ *  Variable Name: <prefix>_stock_trim
+ *
+ *   Possible Values: double
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_TRIM   331  /* UF_PARAM_type_double_length */
+
+/* UF_PARAM_SIDE_STOCK
+ *
+ *   Description:
+ *      This parameter specifies the side stock.
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Side
+ *  Variable Name: <prefix>_stock_side
+ *
+ *   Possible Values: double
+ *
+ * 
+ */
+#define UF_PARAM_SIDE_STOCK   334  /*   */
+
+
+typedef enum UF_PARAM_stock_part_use_e
+{
+    UF_PARAM_stock_part_use_as_is = 0,
+    UF_PARAM_stock_part_use_floor_same_as_side = 1
+
+} UF_PARAM_stock_part_use_t;
+
+
+/* UF_PARAM_STOCK_PART_USE
+ *
+ *   Description:
+ *      This parameter specifies how the part stocks should be used
+ *      in the processing.
+ *
+ *   Type: UF_PARAM_type_int
+ *
+ *   Name: Stock Part Use
+ *  Variable Name: <prefix>_stock_part_use
+ *
+ *   Possible Values: UF_PARAM_stock_part_use_t
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_PART_USE   346 
+
+/* UF_PARAM_STOCK_PART_OFFSET
+ *
+ *   Description:
+ *      This parameter specifies initial part stock minus part stock
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Surface Contour Part Stock Offset
+ *  Variable Name: <prefix>_surface_contour_part_stock_offset
+ *
+ *   Possible Values: Zero or positive double
+ *
+ * 
+ *
+ */
+#define UF_PARAM_STOCK_PART_OFFSET   376  /* UF_PARAM_type_double_length */
+
+/* UF_PARAM_FACE_STOCK
+ *
+ *   Description:
+ *      Parameter is the Face Stock for Lathe applications
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Face Stock
+ *  Variable Name: <prefix>_face_stock
+ *
+ *   Possible Values: UF_PARAM_type_double_length
+ *
+ * 
+ */
+#define UF_PARAM_FACE_STOCK   502  /*   */
+
+
+/* UF_PARAM_RAD_STOCK
+ *
+ *   Description:
+ *      Parameter is the Diameter Stock for Lathe applications
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Radial Stock
+ *  Variable Name: <prefix>_radial_stock
+ *
+ *   Possible Values: UF_PARAM_type_double_length
+ *
+ * 
+ */
+#define UF_PARAM_RAD_STOCK   503  /*   */
+
+/* UF_PARAM_STOCK_DRIVE_GEOM 
+ * 
+ *  Description: 
+ *      This index specifies the stock for drive geometry.
+ * 
+ *  Type: UF_PARAM_type_double_length 
+ * 
+ *  Name: Drive Geometry Stock 
+ *  Variable Name: <prefix>_drive_geometry_stock
+ * 
+ *  Possible Values: double 
+ * 
+ * 
+ */ 
+#define UF_PARAM_STOCK_DRIVE_GEOM   1764   /* UF_PARAM_type_double_length */ 
+
+/* UF_PARAM_WALL_STOCK_OFFSET
+ *
+ *  Description:
+ *      This parameter specifies the custom wall stock offset.
+ *
+ *  Type: UF_PARAM_type_double_length
+ *
+ *  Name: Wall stock offset
+ *  Variable Name: <prefix>_wall_stock_offset
+ *
+ *  Possible Values:
+ *                0.0 -- default
+ *                positive number
+ *
+ * 
+ */
+#define UF_PARAM_WALL_STOCK_OFFSET   1828  /* Param_type_double_length */
+
+
+/* UF_PARAM_STOCK_WALL
+ *
+ *   Description:
+ *      Parameter is the wall stock to be applied to the
+ *      defined wall geometry (UF_PARAM_WALL_GEOM).
+ *
+ *   Type: UF_PARAM_type_double_length
+ *
+ *   Name: Stock Wall
+ *  Variable Name: <prefix>_stock_wall
+ *
+ *   Possible Values: UF_PARAM_type_double_length
+ *
+ * 
+ */
+#define UF_PARAM_STOCK_WALL   3018  /* UF_PARAM_type_double_length */
+
+
